@@ -3,394 +3,335 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ARISE - Strategic Digital Marketing That Delivers Real Results. SEO, Social Media, Content Strategy, Email Marketing and more." />
-  <title>ARISE | Digital Marketing Agency</title>
+
+  <!-- Primary Meta -->
+  <title>ARISE | Digital Marketing Intelligence Platform</title>
+  <meta name="description" content="ARISE is a high-authority digital marketing platform publishing expert guides on SEO, content strategy, growth, branding, and paid advertising — built on a 17-chapter playbook." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://abidurrahman1515.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://abidurrahman1515.github.io/" />
+  <meta property="og:title"       content="ARISE | Digital Marketing Intelligence Platform" />
+  <meta property="og:description" content="Expert guides on SEO, content strategy, growth, branding, and paid advertising for modern marketers." />
+  <meta property="og:image"       content="https://abidurrahman1515.github.io/assets/og-home.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="ARISE | Digital Marketing Intelligence Platform" />
+  <meta name="twitter:description" content="Expert guides on SEO, content strategy, growth, branding, and paid advertising." />
+  <meta name="twitter:image"       content="https://abidurrahman1515.github.io/assets/og-home.png" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ARISE",
+    "url": "https://abidurrahman1515.github.io/",
+    "description": "High-authority digital marketing platform publishing expert guides based on a 17-chapter playbook.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ARISE",
+      "url": "https://abidurrahman1515.github.io/"
+    }
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Preloader -->
-  <div id="preloader" class="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-logo">ARISE</div>
-      <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
-    </div>
-  </div>
-
-  <!-- Back To Top -->
-  <button id="backToTop" class="back-to-top" aria-label="Back to top">&#8679;</button>
+  <!-- Skip to main content -->
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <!-- Navigation -->
-  <nav id="navbar" class="navbar">
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#home" class="nav-logo">ARISE</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+      <a href="/" class="nav-logo" aria-label="ARISE – Home">ARISE<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="/"          class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="blog.html"  class="nav-link"        role="menuitem">Blog</a></li>
+        <li role="none"><a href="#pillars"   class="nav-link"        role="menuitem">Topics</a></li>
+        <li role="none"><a href="#about"     class="nav-link"        role="menuitem">About</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+
+      <a href="blog.html" class="btn btn-primary nav-cta" aria-label="Read the blog">Read the Blog</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-bg">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-    </div>
-    <canvas id="particleCanvas"></canvas>
-    <div class="hero-content">
-      <p class="hero-eyebrow animate-in">Digital Marketing Excellence</p>
-      <h1 class="hero-title animate-in">We Make Brands <span class="gold-text">ARISE</span></h1>
-      <p class="hero-subtitle animate-in">Strategic Digital Marketing That Delivers Real Results</p>
-      <div class="hero-cta animate-in">
-        <a href="#contact" class="btn btn-primary">Get Started</a>
-        <a href="#portfolio" class="btn btn-outline">View Our Work</a>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <span>Scroll Down</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
+  <!-- Main content -->
+  <main id="main">
 
-  <!-- About Section -->
-  <section id="about" class="about section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Who We Are</span>
-        <h2 class="section-title">About <span class="gold-text">ARISE</span></h2>
-        <p class="section-subtitle">We are a cutting-edge digital marketing agency built for the bold. ARISE combines data-driven strategy with creative execution to help brands dominate their market.</p>
-      </div>
-      <div class="about-content">
-        <div class="about-text reveal">
-          <p>Founded by passionate digital marketers, ARISE has helped hundreds of businesses transform their online presence. We don't just run campaigns &mdash; we architect growth strategies that create lasting impact.</p>
-          <p>Our team of experts brings together years of experience in SEO, paid media, content creation, and brand strategy to deliver measurable results that move the needle.</p>
-          <a href="#services" class="btn btn-primary">Explore Services</a>
+    <!-- ── Hero ── -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">&#128270; Marketing Intelligence Playbook</p>
+          <h1 class="hero-title" id="hero-heading">
+            The Digital Marketing<br>
+            <span class="highlight">Intelligence</span> Platform
+          </h1>
+          <p class="hero-subtitle">
+            Master SEO, content, growth, branding, and paid advertising with deeply researched guides 
+            built on a 17-chapter digital marketing playbook trusted by B2B marketers.
+          </p>
+          <div class="hero-actions">
+            <a href="blog.html"  class="btn btn-primary">Explore the Blog</a>
+            <a href="#pillars"   class="btn btn-outline">Browse Topics</a>
+          </div>
+          <div class="hero-meta">
+            <div class="hero-stat">
+              <strong>17</strong>
+              <span>Core Topics</span>
+            </div>
+            <div class="hero-divider" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <strong>100+</strong>
+              <span>Planned Articles</span>
+            </div>
+            <div class="hero-divider" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <strong>5</strong>
+              <span>Pillar Categories</span>
+            </div>
+          </div>
         </div>
-        <div class="stats-grid reveal">
-          <div class="stat-card">
-            <div class="stat-number" data-target="500">0</div>
-            <div class="stat-suffix">+</div>
-            <div class="stat-label">Clients Served</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="98">0</div>
-            <div class="stat-suffix">%</div>
-            <div class="stat-label">Client Satisfaction</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="5">0</div>
-            <div class="stat-suffix">+</div>
-            <div class="stat-label">Years Experience</div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Our Expertise</span>
-        <h2 class="section-title">What We <span class="gold-text">Do</span></h2>
-        <p class="section-subtitle">From search engine dominance to viral social campaigns, we cover every facet of digital marketing.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon">&#127919;</div>
-          <h3 class="service-title">SEO Optimization</h3>
-          <p class="service-desc">Climb the rankings and capture organic traffic with our proven, white-hat SEO strategies tailored to your industry.</p>
-          <div class="service-hover-line"></div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">&#128241;</div>
-          <h3 class="service-title">Social Media Marketing</h3>
-          <p class="service-desc">Build a loyal community, amplify your brand voice, and convert followers into customers across every platform.</p>
-          <div class="service-hover-line"></div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">&#128161;</div>
-          <h3 class="service-title">Content Strategy</h3>
-          <p class="service-desc">Compelling content that educates, entertains, and converts. We craft narratives that make your brand unforgettable.</p>
-          <div class="service-hover-line"></div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">&#128231;</div>
-          <h3 class="service-title">Email Marketing</h3>
-          <p class="service-desc">Hyper-personalized email campaigns with high open rates and click-throughs that drive real revenue growth.</p>
-          <div class="service-hover-line"></div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">&#127912;</div>
-          <h3 class="service-title">Brand Identity Design</h3>
-          <p class="service-desc">From logo to full brand guidelines &mdash; we build visual identities that command attention and earn trust instantly.</p>
-          <div class="service-hover-line"></div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">&#128202;</div>
-          <h3 class="service-title">Analytics &amp; Reporting</h3>
-          <p class="service-desc">Crystal-clear dashboards and insights that show exactly what's working, so every decision is backed by data.</p>
-          <div class="service-hover-line"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- ── Value Proposition / Pillars ── -->
+    <section class="section" id="pillars" aria-labelledby="pillars-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Core Topics</p>
+          <h2 class="section-title" id="pillars-heading">Five Pillars of Digital Marketing Mastery</h2>
+          <p class="section-subtitle">
+            Every guide on ARISE is anchored in one of five strategic pillars, forming a complete 
+            topical authority system for modern marketers.
+          </p>
+        </header>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Case Studies</span>
-        <h2 class="section-title">Our <span class="gold-text">Work</span></h2>
-        <p class="section-subtitle">Real campaigns. Real results. See how we've helped brands rise above the competition.</p>
-      </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-card reveal gradient-1">
-          <div class="portfolio-overlay">
-            <span class="portfolio-category">SEO Campaign</span>
-            <h3 class="portfolio-name">TechNova Scale-Up</h3>
-            <a href="#contact" class="portfolio-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-card reveal gradient-2">
-          <div class="portfolio-overlay">
-            <span class="portfolio-category">Social Media</span>
-            <h3 class="portfolio-name">Luxe Fashion Brand</h3>
-            <a href="#contact" class="portfolio-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-card reveal gradient-3">
-          <div class="portfolio-overlay">
-            <span class="portfolio-category">Content Strategy</span>
-            <h3 class="portfolio-name">HealthFirst Clinic</h3>
-            <a href="#contact" class="portfolio-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-card reveal gradient-4">
-          <div class="portfolio-overlay">
-            <span class="portfolio-category">Email Marketing</span>
-            <h3 class="portfolio-name">E-Commerce Boost</h3>
-            <a href="#contact" class="portfolio-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-card reveal gradient-5">
-          <div class="portfolio-overlay">
-            <span class="portfolio-category">Brand Identity</span>
-            <h3 class="portfolio-name">Apex Consulting</h3>
-            <a href="#contact" class="portfolio-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-card reveal gradient-6">
-          <div class="portfolio-overlay">
-            <span class="portfolio-category">Analytics</span>
-            <h3 class="portfolio-name">FinEdge Solutions</h3>
-            <a href="#contact" class="portfolio-btn">View Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="pillars-grid" role="list">
+          <article class="pillar-card reveal" role="listitem">
+            <div class="pillar-icon" aria-hidden="true">&#128200;</div>
+            <h3>Strategy &amp; Growth</h3>
+            <p>AARRR growth models, LTV:CAC ratios, attribution frameworks, and strategic planning templates that drive compounding results.</p>
+            <a href="blog.html?filter=strategy" class="read-more">Explore &#8594;</a>
+          </article>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Social Proof</span>
-        <h2 class="section-title">What Clients <span class="gold-text">Say</span></h2>
-        <p class="section-subtitle">Don't take our word for it &mdash; hear directly from the brands we've helped ARISE.</p>
+          <article class="pillar-card reveal" role="listitem">
+            <div class="pillar-icon" aria-hidden="true">&#129504;</div>
+            <h3>Brand &amp; Audience</h3>
+            <p>ICP development, buyer psychology, positioning frameworks, and trust-building systems that make your brand unforgettable.</p>
+            <a href="blog.html?filter=brand" class="read-more">Explore &#8594;</a>
+          </article>
+
+          <article class="pillar-card reveal" role="listitem">
+            <div class="pillar-icon" aria-hidden="true">&#128270;</div>
+            <h3>Traffic &amp; Acquisition</h3>
+            <p>Technical SEO, GEO, paid media (Google &amp; Meta), social strategy, and influencer marketing to own your audience acquisition.</p>
+            <a href="blog.html?filter=acquisition" class="read-more">Explore &#8594;</a>
+          </article>
+
+          <article class="pillar-card reveal" role="listitem">
+            <div class="pillar-icon" aria-hidden="true">&#128247;</div>
+            <h3>Conversion &amp; Retention</h3>
+            <p>AIDA funnels, CRO psychology, email automation, CRM systems, and lead nurturing frameworks that convert visitors into loyal customers.</p>
+            <a href="blog.html?filter=conversion" class="read-more">Explore &#8594;</a>
+          </article>
+
+          <article class="pillar-card reveal" role="listitem">
+            <div class="pillar-icon" aria-hidden="true">&#128218;</div>
+            <h3>Content Marketing</h3>
+            <p>Long-form content strategy, pillar + cluster architecture, content distribution systems, and editorial planning at scale.</p>
+            <a href="blog.html?filter=content" class="read-more">Explore &#8594;</a>
+          </article>
+
+          <article class="pillar-card reveal" role="listitem">
+            <div class="pillar-icon" aria-hidden="true">&#128295;</div>
+            <h3>The Arsenal</h3>
+            <p>Real case studies, platform deep-dives, tech stack guides, and hands-on breakdowns of the tools modern marketers use.</p>
+            <a href="blog.html?filter=arsenal" class="read-more">Explore &#8594;</a>
+          </article>
+        </div>
       </div>
-      <div class="testimonials-carousel reveal">
-        <div class="testimonials-track" id="testimonialsTrack">
-          <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="testimonial-quote">"ARISE completely transformed our online presence. Our organic traffic tripled in just 4 months and our leads quality is through the roof. Truly exceptional work."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">SR</div>
-              <div class="author-info">
-                <strong>Sarah Reynolds</strong>
-                <span>CEO, TechNova</span>
+    </section>
+
+    <!-- ── Recent Articles ── -->
+    <section class="section" id="articles" style="background: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);" aria-labelledby="articles-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Latest Guides</p>
+          <h2 class="section-title" id="articles-heading">Featured Articles</h2>
+          <p class="section-subtitle">
+            Deeply researched, actionable guides for marketers who want to build systems, not just tactics.
+          </p>
+        </header>
+
+        <div class="articles-grid">
+
+          <article class="article-card reveal" data-category="acquisition">
+            <div class="article-card-img-placeholder" aria-hidden="true">&#128270;</div>
+            <div class="article-card-body">
+              <div class="article-card-meta">
+                <span class="tag tag-primary">SEO</span>
+                <time datetime="2025-01-15">Jan 15, 2025</time>
               </div>
+              <h3>
+                <a href="article-template.html">The Complete Technical SEO Audit Framework: A Step-by-Step Guide</a>
+              </h3>
+              <p class="article-card-excerpt">
+                Learn how to conduct a comprehensive technical SEO audit using a proven 12-point framework. 
+                Covers crawlability, Core Web Vitals, structured data, and more.
+              </p>
+              <a href="article-template.html" class="read-more" aria-label="Read: Technical SEO Audit Framework">Read Article &#8594;</a>
             </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="testimonial-quote">"The ARISE team doesn't just run campaigns &mdash; they become your growth partners. Their social media strategy helped us reach 100k followers and generate 5x ROI."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">MK</div>
-              <div class="author-info">
-                <strong>Marcus King</strong>
-                <span>Founder, Luxe Fashion</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="testimonial-quote">"I was skeptical at first, but ARISE delivered beyond expectations. Their email campaigns achieved a 48% open rate and directly contributed to $200K in new revenue."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">AL</div>
-              <div class="author-info">
-                <strong>Amelia Liu</strong>
-                <span>Marketing Director, FinEdge</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-controls">
-          <button class="carousel-btn" id="prevBtn" aria-label="Previous testimonial">&#8592;</button>
-          <div class="carousel-dots" id="carouselDots">
-            <button class="dot active" aria-label="Go to testimonial 1"></button>
-            <button class="dot" aria-label="Go to testimonial 2"></button>
-            <button class="dot" aria-label="Go to testimonial 3"></button>
-          </div>
-          <button class="carousel-btn" id="nextBtn" aria-label="Next testimonial">&#8594;</button>
-        </div>
-      </div>
-    </div>
-  </section>
+          </article>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Let's Work <span class="gold-text">Together</span></h2>
-        <p class="section-subtitle">Ready to make your brand ARISE? Drop us a message and we'll get back to you within 24 hours.</p>
+          <article class="article-card reveal" data-category="strategy">
+            <div class="article-card-img-placeholder" aria-hidden="true">&#128200;</div>
+            <div class="article-card-body">
+              <div class="article-card-meta">
+                <span class="tag tag-primary">Growth</span>
+                <time datetime="2025-01-12">Jan 12, 2025</time>
+              </div>
+              <h3>
+                <a href="article-template.html">AARRR Framework Decoded: How to Build a Data-Driven Growth Engine</a>
+              </h3>
+              <p class="article-card-excerpt">
+                A deep dive into the Pirate Metrics framework — Acquisition, Activation, Retention, Referral, Revenue — 
+                with real KPIs and implementation strategies for B2B SaaS.
+              </p>
+              <a href="article-template.html" class="read-more" aria-label="Read: AARRR Framework">Read Article &#8594;</a>
+            </div>
+          </article>
+
+          <article class="article-card reveal" data-category="brand">
+            <div class="article-card-img-placeholder" aria-hidden="true">&#129504;</div>
+            <div class="article-card-body">
+              <div class="article-card-meta">
+                <span class="tag tag-primary">Branding</span>
+                <time datetime="2025-01-08">Jan 8, 2025</time>
+              </div>
+              <h3>
+                <a href="article-template.html">Building Your ICP: The Ultimate B2B Buyer Persona Guide for 2025</a>
+              </h3>
+              <p class="article-card-excerpt">
+                How to build an Ideal Customer Profile that goes beyond demographics — covering psychographics, 
+                job-to-be-done theory, and behavioral triggers that drive purchase decisions.
+              </p>
+              <a href="article-template.html" class="read-more" aria-label="Read: ICP and Buyer Persona Guide">Read Article &#8594;</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center" style="margin-top: var(--space-5);">
+          <a href="blog.html" class="btn btn-outline">View All Articles</a>
+        </div>
       </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <div class="contact-item">
-            <div class="contact-icon">&#9993;</div>
-            <div>
-              <strong>Email Us</strong>
-              <span>hello@ariseagency.com</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">&#9742;</div>
-            <div>
-              <strong>Call Us</strong>
-              <span>+1 (555) 123-4567</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">&#128205;</div>
-            <div>
-              <strong>Location</strong>
-              <span>New York, NY 10001, USA</span>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="Twitter/X">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
+    </section>
+
+    <!-- ── About / Platform ── -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div style="display: grid; gap: var(--space-6); grid-template-columns: 1fr; max-width: 960px; margin-inline: auto;">
+          <header class="reveal">
+            <p class="section-eyebrow">About ARISE</p>
+            <h2 class="section-title" id="about-heading">Built on a 17-Chapter Marketing Playbook</h2>
+          </header>
+          <div style="display: grid; gap: var(--space-4); grid-template-columns: 1fr;" class="reveal">
+            <p>
+              ARISE is a digital marketing intelligence platform that transforms a comprehensive 17-chapter 
+              marketing playbook into actionable, deeply-researched content. Every article is anchored in 
+              proven frameworks — from the fundamentals of digital marketing to advanced growth strategies 
+              used by leading B2B companies.
+            </p>
+            <p>
+              The platform covers the full spectrum: market research and ICP development, technical SEO 
+              and GEO, content architecture, paid advertising, email automation, CRO psychology, 
+              analytics frameworks, and emerging trends in AI-driven marketing.
+            </p>
+            <a href="blog.html" class="btn btn-primary" style="width: fit-content;">Start Reading</a>
           </div>
         </div>
-        <form class="contact-form reveal" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" />
-            <span class="field-error" id="nameError"></span>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" />
-            <span class="field-error" id="emailError"></span>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="How can we help?" />
-            <span class="field-error" id="subjectError"></span>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
-            <span class="field-error" id="messageError"></span>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-          <div class="form-success" id="formSuccess">&#10003; Your message has been sent! We'll be in touch soon.</div>
-        </form>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- ── CTA Banner ── -->
+    <section class="section-sm" aria-label="Newsletter call to action">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>Get the Digital Marketing Playbook</h2>
+          <p>Join thousands of marketers who get weekly insights on SEO, content, growth, and more — straight from the ARISE intelligence platform.</p>
+          <a href="blog.html" class="btn btn-white">Browse All Articles</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo">ARISE</div>
-          <p class="footer-tagline">Rise Above. Stand Out. Dominate.</p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="Twitter/X">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-          </div>
+          <a href="/" class="nav-logo" aria-label="ARISE home">ARISE<span style="color: var(--color-primary)">.</span></a>
+          <p>A digital marketing intelligence platform built on a 17-chapter playbook for modern marketers.</p>
         </div>
-        <div class="footer-links-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
+
+        <nav class="footer-col" aria-label="Topics navigation">
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html?filter=strategy">Strategy &amp; Growth</a></li>
+            <li><a href="blog.html?filter=brand">Brand &amp; Audience</a></li>
+            <li><a href="blog.html?filter=acquisition">Traffic &amp; SEO</a></li>
+            <li><a href="blog.html?filter=conversion">Conversion &amp; CRO</a></li>
+            <li><a href="blog.html?filter=content">Content Marketing</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Resources navigation">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">All Articles</a></li>
+            <li><a href="article-template.html">Article Template</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company navigation">
+          <h4>Company</h4>
+          <ul class="footer-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#pillars">Topics</a></li>
           </ul>
-        </div>
-        <div class="footer-links-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#services">SEO Optimization</a></li>
-            <li><a href="#services">Social Media</a></li>
-            <li><a href="#services">Content Strategy</a></li>
-            <li><a href="#services">Email Marketing</a></li>
-            <li><a href="#services">Brand Design</a></li>
-          </ul>
-        </div>
-        <div class="footer-links-col">
-          <h4>Contact</h4>
-          <ul>
-            <li>hello@ariseagency.com</li>
-            <li>+1 (555) 123-4567</li>
-            <li>New York, NY 10001</li>
-          </ul>
-        </div>
+        </nav>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 ARISE. All Rights Reserved.</p>
-        <p>Crafted with &#10084; for brands that dare to ARISE.</p>
+        <p>&#169; <span id="footerYear">2025</span> ARISE. All rights reserved.</p>
+        <p>Built for digital marketers worldwide.</p>
       </div>
     </div>
   </footer>
 
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&#8679;</button>
+
   <script src="js/main.js"></script>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
 </body>
 </html>
