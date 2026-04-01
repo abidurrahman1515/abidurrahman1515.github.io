@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Meta -->
+  <meta name="description" content="[ARTICLE META DESCRIPTION — replace this placeholder]" />
+  <meta name="author" content="MD ABIDUR RAHMAN" />
+  <title>[ARTICLE TITLE] | ARISE Marketing Intelligence</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="[ARTICLE TITLE] | ARISE Marketing Intelligence" />
+  <meta property="og:description" content="[ARTICLE META DESCRIPTION — replace this placeholder]" />
+  <meta property="og:url" content="https://abidurrahman1515.github.io/posts/[slug].html" />
+  <meta property="og:site_name" content="ARISE Marketing Intelligence" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="[ARTICLE TITLE] | ARISE Marketing Intelligence" />
+  <meta name="twitter:description" content="[ARTICLE META DESCRIPTION — replace this placeholder]" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "[ARTICLE TITLE]",
+    "description": "[ARTICLE META DESCRIPTION]",
+    "author": {
+      "@type": "Person",
+      "name": "MD ABIDUR RAHMAN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhaka",
+        "addressCountry": "BD"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ARISE Marketing Intelligence"
+    },
+    "datePublished": "[YYYY-MM-DD]",
+    "url": "https://abidurrahman1515.github.io/posts/[slug].html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* ── Article-specific overrides ── */
+    .article-hero {
+      padding: calc(var(--nav-h) + 60px) 0 60px;
+      background: linear-gradient(135deg, var(--clr-bg) 0%, var(--clr-bg-2) 100%);
+      border-bottom: 1px solid var(--clr-border);
+    }
+    .article-hero .container { max-width: 820px; }
+    .article-category {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      background: rgba(245,197,24,0.1);
+      border: 1px solid var(--clr-border);
+      padding: 4px 14px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .article-hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--clr-white);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 0.88rem;
+      color: var(--clr-text-muted);
+    }
+    .article-meta .author-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .article-meta .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--clr-gold) 0%, var(--clr-purple) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.75rem;
+      color: var(--clr-bg);
+      flex-shrink: 0;
+    }
+    .article-meta .author-name { color: var(--clr-white); font-weight: 600; }
+    .article-body {
+      padding: 60px 0 80px;
+    }
+    .article-body .container { max-width: 820px; }
+    .article-body h2 {
+      font-family: var(--font-head);
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--clr-white);
+      margin: 2.4rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--clr-border);
+    }
+    .article-body h3 {
+      font-family: var(--font-head);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--clr-white);
+      margin: 1.8rem 0 0.7rem;
+    }
+    .article-body p { margin-bottom: 1.2rem; line-height: 1.85; }
+    .article-body ul, .article-body ol {
+      margin: 0 0 1.2rem 1.4rem;
+      line-height: 1.85;
+    }
+    .article-body li { margin-bottom: 0.5rem; }
+    .article-body strong { color: var(--clr-white); }
+    .callout {
+      background: rgba(245,197,24,0.06);
+      border-left: 4px solid var(--clr-gold);
+      padding: 20px 24px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 2rem 0;
+    }
+    .callout-title {
+      font-weight: 700;
+      color: var(--clr-gold);
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .framework-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.92rem;
+    }
+    .framework-table th {
+      background: rgba(245,197,24,0.1);
+      color: var(--clr-gold);
+      font-weight: 700;
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 2px solid var(--clr-border);
+    }
+    .framework-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--clr-border);
+      vertical-align: top;
+    }
+    .framework-table tr:last-child td { border-bottom: none; }
+    /* Author Bio */
+    .author-bio {
+      margin-top: 60px;
+      padding: 40px;
+      background: var(--clr-bg-card);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-lg);
+    }
+    .author-bio-inner {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .author-bio-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--clr-gold) 0%, var(--clr-purple) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-head);
+      font-weight: 900;
+      font-size: 1.3rem;
+      color: var(--clr-bg);
+      flex-shrink: 0;
+    }
+    .author-bio-content .author-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .author-bio-content h3 {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--clr-white);
+      margin: 0 0 6px;
+    }
+    .author-bio-content .author-location {
+      font-size: 0.82rem;
+      color: var(--clr-text-muted);
+      margin-bottom: 14px;
+    }
+    .author-bio-content p { margin-bottom: 0.8rem; font-size: 0.95rem; }
+    .author-bio-content .audiobook-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--clr-gold);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid var(--clr-gold);
+      padding: 8px 18px;
+      border-radius: 50px;
+      transition: var(--transition);
+      margin-top: 6px;
+    }
+    .author-bio-content .audiobook-link:hover {
+      background: var(--clr-gold);
+      color: var(--clr-bg);
+    }
+    /* Related Articles */
+    .related-articles {
+      margin-top: 60px;
+      padding-top: 40px;
+      border-top: 1px solid var(--clr-border);
+    }
+    .related-articles h2 {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--clr-white);
+      margin-bottom: 24px;
+      border: none;
+      padding: 0;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .related-card {
+      background: var(--clr-bg-card);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: var(--transition);
+    }
+    .related-card:hover { border-color: var(--clr-gold); transform: translateY(-3px); }
+    .related-card .related-cat {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .related-card h4 { font-size: 0.95rem; font-weight: 600; color: var(--clr-white); }
+    @media (max-width: 600px) {
+      .author-bio-inner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">ARISE</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#services" class="nav-link">Pillars</a></li>
+        <li><a href="../index.html#portfolio" class="nav-link">Case Studies</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Article Hero -->
+  <header class="article-hero">
+    <div class="container">
+      <span class="article-category">[CATEGORY — e.g. Branding &amp; Positioning]</span>
+      <h1>[ARTICLE TITLE — replace this placeholder]</h1>
+      <div class="article-meta">
+        <div class="author-badge">
+          <div class="avatar">AR</div>
+          <div>
+            <span class="author-name">MD ABIDUR RAHMAN</span><br />
+            <span>ARISE Marketing Intelligence &middot; Dhaka, Bangladesh</span>
+          </div>
+        </div>
+        <span>&#128197; [DATE — e.g. January 2026]</span>
+        <span>&#128337; [READ TIME — e.g. 8 min read]</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Body -->
+  <main class="article-body">
+    <div class="container">
+
+      <!-- ═══════════════════════════════════════════════
+           ARTICLE CONTENT — replace everything below
+           ═══════════════════════════════════════════════ -->
+
+      <p>[Opening paragraph — hook the reader with a strong insight or data point from the book.]</p>
+
+      <h2>[H2 — First major section]</h2>
+      <p>[Section body copy.]</p>
+
+      <div class="callout">
+        <div class="callout-title">&#128161; Key Insight</div>
+        <p>[A key insight, framework excerpt, or author perspective from the book.]</p>
+      </div>
+
+      <h2>[H2 — Second major section]</h2>
+      <p>[Section body copy.]</p>
+
+      <h3>[H3 — Sub-section]</h3>
+      <p>[Sub-section body copy.]</p>
+
+      <!-- ─── Author Bio ─────────────────────────────── -->
+      <div class="author-bio">
+        <div class="author-bio-inner">
+          <div class="author-bio-avatar">AR</div>
+          <div class="author-bio-content">
+            <p class="author-label">About the Author</p>
+            <h3>MD ABIDUR RAHMAN</h3>
+            <p class="author-location">&#128205; Dhaka, Bangladesh &mdash; 2026</p>
+            <p>MD ABIDUR RAHMAN is a practitioner-level digital marketer and the author of <em>Marketing Intelligence: The Complete Digital Playbook</em>. With hands-on experience across markets in Dhaka and internationally, he has worked with early-stage startups through to established B2B organisations, running campaigns spanning SEO, paid media, email automation, and brand strategy.</p>
+            <p>His 17-chapter handbook synthesises frameworks from HubSpot, Google, Ahrefs, Cialdini, and dozens of additional authoritative sources into a single coherent guide designed for founders and practitioners who need clarity without an agency budget.</p>
+            <a href="https://www.youtube.com/@ariseMarketingIntelligence" target="_blank" rel="noopener" class="audiobook-link">&#127911; Listen to the Complete Audiobook on YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── Related Articles ───────────────────────── -->
+      <div class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+          <a href="data-driven-buyer-personas.html" class="related-card">
+            <p class="related-cat">Market Research</p>
+            <h4>How to Build Data-Driven Buyer Personas Using the Five-Element Format</h4>
+          </a>
+          <a href="brand-positioning-strategies.html" class="related-card">
+            <p class="related-cat">Branding &amp; Positioning</p>
+            <h4>Brand Positioning Strategies: The Formula and The Trust Economy</h4>
+          </a>
+          <a href="social-media-strategy.html" class="related-card">
+            <p class="related-cat">Social Media</p>
+            <h4>Social Media Strategy: Crisis Response and Influencer Marketing</h4>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">ARISE</div>
+          <p class="footer-tagline">Marketing Intelligence — by MD ABIDUR RAHMAN</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#services">Pillars</a></li>
+            <li><a href="../index.html#portfolio">Case Studies</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Articles</h4>
+          <ul>
+            <li><a href="data-driven-buyer-personas.html">Buyer Personas</a></li>
+            <li><a href="brand-positioning-strategies.html">Brand Positioning</a></li>
+            <li><a href="social-media-strategy.html">Social Media Strategy</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Author</h4>
+          <ul>
+            <li>MD ABIDUR RAHMAN</li>
+            <li>Dhaka, Bangladesh</li>
+            <li><a href="https://www.youtube.com/@ariseMarketingIntelligence" target="_blank" rel="noopener" style="color:var(--clr-gold)">&#127911; Audiobook on YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ARISE Marketing Intelligence &mdash; MD ABIDUR RAHMAN. All Rights Reserved.</p>
+        <p>Dhaka, Bangladesh &mdash; Read it. Listen to it. Learn from it.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
