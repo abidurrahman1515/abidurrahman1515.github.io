@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>404 – Page Not Found | ARISE</title>
+  <meta name="description" content="Oops! The page you're looking for doesn't exist. Head back to ARISE and keep learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-code {
+      font-family: var(--font-head);
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--clr-gold), var(--clr-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .error-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--clr-white);
+      margin-bottom: 1rem;
+    }
+    .error-message {
+      font-size: 1.1rem;
+      color: var(--clr-text-muted);
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--clr-gold), var(--clr-purple));
+      border-radius: 2px;
+      margin: 0 auto 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">ARISE</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 404 Content -->
+  <main class="error-page">
+    <div class="error-code">404</div>
+    <div class="error-divider"></div>
+    <h1 class="error-title">This Page Doesn't Exist (Yet)</h1>
+    <p class="error-message">
+      We couldn't find the page you were looking for. It may have been moved,
+      renamed, or never created. But there's plenty of valuable content waiting
+      for you back on the main site.
+    </p>
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-primary">&#8592; Back to Home</a>
+      <a href="blog.html" class="btn btn-outline">Browse the Blog</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 ARISE. All Rights Reserved.</p>
+        <p>Crafted with &#10084; for brands that dare to ARISE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -252,6 +252,31 @@
     drawParticles();
   }
 
+  /* ── Lead Capture Form Handler ── */
+  function initLeadCaptureForms() {
+    document.querySelectorAll('.lead-capture-form').forEach(function (form) {
+      var successId = form.closest('.lead-capture-form-box').querySelector('.lead-capture-success');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var nameInput = form.querySelector('input[name="lc_name"]');
+        var emailInput = form.querySelector('input[name="lc_email"]');
+        if (!nameInput || !nameInput.value.trim()) {
+          nameInput && nameInput.focus();
+          return;
+        }
+        if (!emailInput || !emailInput.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+          emailInput && emailInput.focus();
+          return;
+        }
+        /* In production, replace this with your email service API call */
+        form.style.display = 'none';
+        form.closest('.lead-capture-form-box').querySelector('.lead-capture-privacy').style.display = 'none';
+        if (successId) successId.style.display = 'block';
+      });
+    });
+  }
+  initLeadCaptureForms();
+
   /* ── Smooth scroll for all anchor links ── */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
